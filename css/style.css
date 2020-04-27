@@ -345,13 +345,11 @@ footer p {
 	input[type="text"],
 	input[type="email"],
 	textarea {
-		width: 100%;
 		max-width: 250px;
 	}
 	input[type="submit"] {
 		margin-top: 5px;
 		margin-bottom: 35px;
-		width: 100%;
 		max-width: 250px;
 	}
 }
