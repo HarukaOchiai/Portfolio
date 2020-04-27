@@ -1,0 +1,357 @@
+@charset "UTF-8";
+
+/* 共通部分
+---------------------------------------- */
+html {
+	font-size: 100%; /* ユーザーの設定した文字サイズを正しく反映させる */
+}
+body {
+	font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif; /* 書体の指定 */
+	line-height: 1.7; /* 行の高さの指定 */
+	color: #432; /* 文字色の指定 */
+}
+a {
+	text-decoration: none; /* <a>タグの傍線の指定 */
+}
+img {
+	max-width: 100%; /* 画像が親要素よりも大きくなることを防ぐ */
+}
+
+/* ロゴの横幅、マージンの指定 */
+.logo {
+	width: 32px;
+	margin-top: 0px;
+}
+
+/* ナビゲーションメニューの装飾 */
+.main-nav {
+	display: flex; /* 子要素の<li>タグを横並びにする */
+	font-size: 1.25rem;
+	text-transform: uppercase; /* 英字の大文字、小文字の指定 */
+	margin-top: 34px;
+	list-style: none; /* リストの先頭の黒丸を非表示 */
+}
+.main-nav li {
+	margin-left: 36px;
+}
+.main-nav a {
+	color: #432;
+}
+.main-nav a:hover {
+	color: #0bd; /*カーソルを合わせると水色になるよう指定*/
+}
+
+/* ロゴとナビゲーションメニュー */
+.page-header {
+	display: flex; /* 子要素のロゴとナビゲーションメニューを横並びにする */
+	justify-content: center; /*中央揃え*/
+}
+
+/* コンテンツの最大表示幅 */
+.wrapper {
+	max-width: 1100px; /* 最大横幅の指定 */
+	margin: 0 auto; /* ボックスを画面の中央に配置する指定 */
+	padding: 0 12%; /* スマートフォン向けの左右の余白を指定 */
+}
+
+/* 大きな背景画像 */
+.big-bg {
+	background-size: cover; /* 画像の縦横の比率を保ったまま画面いっぱいに広げる指定 */
+	background-position: center top; /* 画像を上部センターに表示する指定 */
+	background-repeat: no-repeat; /* 背景画像の繰り返し表示を無しに指定 */
+}
+
+/* トップページの背景 */
+#top {
+	background-image: linear-gradient(#87ceeb, #c9ffbf, #ffafbd); /* 背景をグラデーションカラーにする */
+	min-height: 100vh; /* 画面の表示領域の高さいっぱいに画像を広げる */
+	margin-bottom: 70px;
+}
+
+/* トップページのタイトル */
+#top .page-title {
+	font-size: 3.5rem;
+	text-transform: none; /* 大文字、小文字の変換を行わない */
+	line-height: 1; /* 行間を指定 */
+	margin-top: 130px; /* タイトルの位置を調整 */
+}
+#top .page-title p {
+	font-size: 3.25rem;
+	font-weight: bold;
+}
+
+#top .page-title h1 {
+	margin-bottom: 15px; /* ボタンとの距離を調整 */
+}
+
+/* ボタン */
+.button {
+	font-size: 1.375rem;
+	font-family: "Yu Gothic Medium";
+	background: #0bd;
+	color: #fff;
+	border-radius: 5px; /* 四角形の角を丸める設定 */
+	padding: 18px 32px;
+	box-shadow: 0 0 12px gray;
+}
+.button:hover {
+	background: #0090aa; /* カーソルをボタンに重ねた時の色を指定 */
+}
+.button:active {
+	transform: scale(0.9, 0.9); /* ボタンの縮小 */
+	cursor: pointer; /* カーソルをポインターにする */
+	transition-duration: 0.2s; /* 変化の時間 */
+}
+
+/* 各ページのタイトル */
+.page-title {
+	font-size: 5rem; /* 基準の文字のサイズの5倍に指定 */
+	font-family: 'Philosopher', serif; /* フォントの種類を指定 */
+	font-weight: normal; /* 文字の太さ指定 */
+	text-align: center; /* 中央揃え */
+	text-transform: capitalize; /* 先頭文字のみを大文字に変換 */
+}
+
+/* About
+---------------------------------------- */
+#about {
+	min-height: 100vh; /* 画面の表示領域の高さいっぱいに画像を広げる */
+	margin-bottom: 50px;
+}
+.about-content {
+	display: flex;
+	margin-top: 25px;
+}
+.about-content img {
+	margin-right: 30px;
+	width: 250px;
+	border-radius: 5px; /* 四角形の角を丸める設定 */
+}
+.about-content .name {
+	font-family: Yu Gothic Medium;
+	font-size: 2.15rem;
+}
+
+.about-text {
+	font-size: 1.2rem;
+	text-align: justify;
+	width: 500px;
+}
+
+/* Skill
+---------------------------------------- */
+#skill {
+	background-color: #f5f5f5;
+	min-height: 100vh; /* 画面の表示領域の高さいっぱいに画像を広げる */
+	margin-bottom: 50px;
+}
+.skill-content {
+	text-align: center;
+}
+.skill-item {
+	font-size: 1.8rem;
+	color: #fff;
+	background: #0bd;
+	border-radius: 5px; 
+	padding: 3px;
+	margin: 15px auto;
+	width: 80%;
+	text-align: center;
+}
+.skill-item:hover {
+	background: #0090aa;
+}
+/* Portfolio
+---------------------------------------- */
+#portfolio {
+	min-height: 100vh; /* 画面の表示領域の高さいっぱいに画像を広げる */
+	margin-bottom: 50px;
+	text-align: center;
+}
+#portfolio .flex {
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+#portfolio img {
+	width: 80%;
+	box-shadow: 0 0 12px gray;
+	transition-duration: 0.5s; /* 変化の時間 */
+}
+#portfolio img:hover {
+	transform: scale(0.9, 0.9); /* 画像の縮小 */
+	cursor: pointer; /* カーソルをポインターにする */
+}
+#portfolio .button {
+	margin-top: 50px;
+}
+/* Contact
+---------------------------------------- */
+#contact {
+	background-color: #f5f5f5;
+	min-height: 100vh; /* 画面の表示領域の高さいっぱいに画像を広げる */
+}
+.contact-content {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.contact-message {
+	margin-left: 50px;
+}
+/* フォーム */
+form {
+	text-align: center; /* 中央揃え */
+}
+form div {
+	margin-bottom: 30px;
+	text-align: left; /* 中央揃え */
+}
+label {
+	font-size: 1.125rem;
+	margin-bottom: 10px;
+	display: block;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+	background: rgba(135, 215, 250, .3);
+	border: 1px #0bd solid;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1rem;
+}
+input[type="text"],
+input[type="email"] {
+	width: 280px;
+}
+textarea {
+	width: 400px;
+	height: 10.5rem;
+}
+input[type="submit"] {
+	border: none;
+	cursor: pointer;
+	line-height: 1;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	width: 100%;
+	max-width: 480px;
+}
+/* フッター
+---------------------------------------- */
+footer {
+	background: #432;
+	text-align: center;
+	padding: 26px 0;
+}
+footer p {
+	color: #fff;
+	font-size: 0.875rem;
+}
+/* モバイル版
+---------------------------------------- */
+@media(max-width: 600px) {
+	.page-title {
+		font-size: 3.5rem;
+	}
+	
+	/* Top */
+	#top .page-title {
+		font-size: 1.5rem;
+		margin-top: 120px; /* タイトルの位置を調整 */
+	}
+	#top .page-title  p {
+		font-size: 2rem;
+	}
+	#top .page-title h1 {
+		margin-bottom: 30px; /* ボタンとの距離を調整 */
+	}
+	
+	/* HEADER */
+	.page-header {
+		flex-direction: column;
+		align-items: center;
+	}
+	.main-nav {
+		font-size: 0.8rem;
+		margin-top: 10px;
+	}
+	.main-nav li {
+		margin: 0 10px;
+	}
+	
+	/* About */
+	.about-content {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 10px;
+	}
+	.about-content img {
+		margin-right: 0;
+		margin-bottom: 10px;
+		width: 80%;
+		max-width: 150px;
+	}
+	.about-content .name {
+		font-size: 2rem;
+		text-align: center;
+	}
+	.about-text {
+		font-size: 1rem;
+		width: 90%;
+	}
+	
+	/* Skill */
+	.skill-item {
+		font-size: 1.2rem;
+	}
+	
+	/* Portfolio */
+	#portfolio .flex {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 25px;
+		margin-bottom: 0px;
+	}
+	#portfolio img {
+		max-width: 200px;
+	}
+	.portfolio-item {
+		margin-top: 0px;
+		margin-bottom: 50px;
+	}
+	
+	#portfolio .button {
+		font-size: 1rem;
+		width: 100%;
+		padding: 18px 18px;
+	}
+	
+	/* Contact */
+	.contact-content {
+		flex-direction: column;
+		align-items: center;
+		margin-top: 0;
+	}
+	.contact-text {
+		margin-bottom: 0;
+	}
+	.contact-message {
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+	input[type="text"],
+	input[type="email"],
+	textarea {
+		width: 100%;
+		max-width: 250px;
+	}
+	input[type="submit"] {
+		margin-top: 5px;
+		margin-bottom: 35px;
+		width: 100%;
+		max-width: 250px;
+	}
+}

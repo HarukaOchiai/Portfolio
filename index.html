@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<title>Haruka Ochiai's Portfolio</title>
+		<meta name="description" content="Haruka Ochiaiのポートフォリオサイトです。">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+	<!-- CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="icon" type="image/png" href="images/favicon_32.png">
+	</head>
+	
+	<body>
+		<div id="top">
+			<header class="page-header wrapper">
+				<nav>
+					<ul class="main-nav">
+						<li><a href="index.html#top"><img class="logo" src="images/logo_48.png" alt="starのアイコン"></a></li>
+						<li><a href="index.html#about">About</a></li>
+						<li><a href="index.html#skill">Skill</a></li>
+						<li><a href="index.html#portfolio">portfolio</a></li>
+						<li><a href="index.html#contact">Contact</a></li>
+					</ul>	
+				</nav>
+			</header>
+			<div class="page-title wrapper">
+				<p>Haruka Ochiai's</p>
+				<h1>PORTFOLIO</h1>
+				<a class="button" href="index.html#about">About</a>
+			</div><!-- /.page-title .wrapper -->
+		</div><!-- /#top -->
+		
+		<div id="about">
+			<h2 class="page-title wrapper">about</h2>
+			
+			<div class="about-content wrapper">
+				<img src="images/me.jpg" alt="MyPhoto">
+				<div class="about-text">
+					<p class="name">Haruka Ochiai</p>
+					<p>1994年、埼玉県生まれ。</p>
+					<p>2018年からシステムエンジニアとして金融機関や生命保険会社などのプロジェクトに参画し、設計、開発、テスト、保守を経験しました。</p>
+					<p>また、今後はフロントエンド系の開発に力を入れていきたいと考えており、Webページ作成やWebデザインについても積極的に学んでおります。
+				</div>
+			</div><!-- /.about-content -->
+		</div><!-- /#about -->
+		
+		<div id="skill">
+			<div class="wrapper">
+				<h2 class="page-title">skill</h2>
+				
+				<div class="skill-content">
+					<div class="skill-item">HTML&CSS</div>
+					<div class="skill-item">JavaScript</div>
+					<div class="skill-item">jQuery</div>
+					<div class="skill-item">Java</div>
+					<div class="skill-item">SQL(Oracle)</div>
+				</div>
+			</div>
+		</div><!-- /#skill -->
+		
+		<div id="portfolio">
+			<h2 class="page-title wrapper">portfolio</h2>
+			<div class="portfolio-content wrapper">
+				<div class="flex">
+					<div class="portfolio-item">
+						<a href="https://harukaochiai.github.io/KUJIRACafe_practice/" target="_blank"><img src="images/kujiracafe.PNG" alt="KUJIRA CAFE"></a>
+						<p>KUJIRA CAFE（模写）</p>
+					</div>	
+					<div class="portfolio-item">
+						<a href="https://harukaochiai.github.io/WCBCafe_practice/" target="_blank"><img src="images/wcbcafe.PNG" alt="WCB CAFE"></a>
+						<p>WCB CAFE（模写）</p>
+					</div>
+				</div>
+				<a class="button" href="https://github.com/HarukaOchiai?tab=repositories" target="_blank">ソースコードはこちら</a>
+			</div>	
+		</div><!-- /#portfolio -->
+		
+		<div id="contact">
+			<div class="wrapper">
+				<h2 class="page-title">contact</h2>
+				<form action="#">
+					<div class="contact-content">
+						<div class="contact-text">
+							<div>
+								<label for="name">お名前</label>
+								<input type="text" id="name" name="your-name" placeholder="Name">
+							</div>
+							
+							<div>
+								<label for="email">メールアドレス</label>
+								<input type="email" id="email" name="your-email" placeholder="Email">
+							</div>
+						</div>
+						<div class="contact-message">
+							<div>
+								<label for="message">メッセージ</label>
+								<textarea id="message" name="your-message" placeholder="Message"></textarea>
+							</div>
+						</div>
+					</div>
+					<input type="submit" class="button" value="送信">
+				</form>	
+			</div>
+		</div><!-- /#contact -->
+		<footer>
+			<div class="wrapper">
+				<p><small>&copy; 2020 Haruka Ochiai</small></p>
+			</div>
+		</footer>
+	</body>
+</html>
